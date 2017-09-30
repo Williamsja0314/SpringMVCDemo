@@ -49,8 +49,7 @@ node ("TestMachine-ut") {
        echo 'Unstash the project source code ...'
        unstash 'SOURCE_CODE'                                                        
                                 
-       echo 'Run the unit tests (and Jacoco) ...'
-       // sh "'${M2_HOME}/bin/mvn' clean test-compile jacoco:prepare-agent test -Djacoco.destFile=target/jacoco.exec"   
-       rtMaven.run pom: 'pom.xml', goals: 'clean test-compile jacoco:prepare-agent test -Djacoco.destFile=target/jacoco.exec'
+       echo 'Run the unit tests ...'
+       sh "'${M2_HOME}/bin/mvn' clean test"
   }
 }
