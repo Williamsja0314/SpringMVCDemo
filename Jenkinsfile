@@ -34,7 +34,7 @@ node ("TestMachine-ut") {
        echo 'Unstash the project source code ...'
        unstash 'SOURCE_CODE' 
 
-       echo "Run unit tests ...'
+       echo 'Run unit tests ...'
        sh "'${M2_HOME}/bin/mvn' clean test"
   }
 }
