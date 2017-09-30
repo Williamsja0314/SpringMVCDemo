@@ -26,7 +26,6 @@ node ("master")  {
 
 node ("TestMachine-ut") {
    // we can also use: withEnv(['M2_HOME=/usr/share/maven', 'JAVA_HOME=/usr']) {}
-   env.MAVEN_HOME = '/usr/share/maven'
    env.M2_HOME = '/usr/share/maven'
    env.JAVA_HOME = '/usr'
 
