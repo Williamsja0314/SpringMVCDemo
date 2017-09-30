@@ -1,4 +1,4 @@
-node ("master")  
+node ("master")  {
    // change the project version (don't rely on version from pom.xml)
    env.BN = VersionNumber([
            versionNumberString : '${BUILD_MONTH}.${BUILDS_TODAY}.${BUILD_NUMBER}', 
